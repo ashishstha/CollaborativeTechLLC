@@ -13,7 +13,7 @@ function App() {
         <h3>Collaborative Tech LLC</h3>
           <hr />
           <div class="content">
-            Coming Soon...
+            In progress...
           </div>
       </section>
     </>
