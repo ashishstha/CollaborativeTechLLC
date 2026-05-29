@@ -1,22 +1,29 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Home from './Home'
+import About from './About'
+import Services from './Services'
+import Contact from './Contact'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <section>
-        <h3>Collaborative Tech LLC</h3>
-          <hr />
-          <div class="content">
-            In progress...
-          </div>
-      </section>
-    </>
+    <section>
+      <BrowserRouter>
+        <Navbar />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    </section>
   )
 }
 
