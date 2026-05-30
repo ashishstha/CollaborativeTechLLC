@@ -1,15 +1,18 @@
 // Navbar.jsx file
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Image } from 'react';
+import CollabTechLogo from '../assets/CollabTechLogo.png';
 import './Navbar.css';
 
 const Navbar = () => {
     return (
         <nav className="navbar">
             <section className="navbar-container">
-                <div className="logo-link">
-                    <Link to="/">Collaborative Tech LLC</Link>
+                <div className="company-corner">
+                    <img src={CollabTechLogo} alt="CollabTech Logo" className="logo-img" />
+                    <div className="logo-link">
+                        <Link to="/">Collaborative Tech LLC</Link>
+                    </div>
                 </div>
                 <ul className="navbar-links">
                     <li><Link to="/">Home</Link></li>

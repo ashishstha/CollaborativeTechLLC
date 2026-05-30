@@ -1,0 +1,23 @@
+.services-page {
+    background-color: rgb(250, 234, 214);
+    padding: 24px;
+}
+
+.services-title {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #007BFF;
+    margin-top: 0px;
+}
+
+.services-description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.services-subheading {
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #007BFF;
+    margin-top: 20px;
+}

@@ -1,8 +1,22 @@
+/* Navbar.css */
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: rgb(250, 234, 214);
+}
+
+.company-corner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+    display: block;
 }
 
 .navbar-links {
@@ -14,14 +28,18 @@
 .navbar-links a {
     text-decoration: none;
     font-weight: 500;
+    color: #007BFF;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .navbar-links a:hover {
-    color: #007BFF;
+    color: #0056b3;
 }
 
 .logo-link a {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #007BFF;
     text-decoration: none;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
 }

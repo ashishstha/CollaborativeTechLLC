@@ -1,0 +1,72 @@
+
+.contact-page {
+    padding: 24px 24px 100px 24px;
+    background-color: rgb(250, 234, 214);
+}
+
+.contact-title {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #007BFF;
+    margin-top: 0px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.contact-img {
+    width: 240px;
+    max-width: 100%;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    min-width: 280px;
+    padding: 10px;
+    background-color: #b4b3b3;
+    border: 1.75px solid black;
+}
+
+.name-field, .email-field {
+    padding: 5px;
+    border: none;
+    border-bottom: 1.5px solid black;
+    background-color: #b4b3b3;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.message-field {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px 5px 50px 5px;
+    border: 1.5px solid black;
+    border-radius: 8px;
+    background-color: #b4b3b3;  
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.name-field:hover, .email-field:hover, .message-field:hover {
+    background-color: #a8a8a8;
+}
+
+.submit-button {
+    border: 1.5px solid #007BFF;
+    border-radius: 12px;
+    width: 50%;
+    background-color: #007BFF;
+    align-self: center;
+    padding: 2px;
+}
+
+.submit-button:hover {
+    border: 1.5px solid #0056b3;
+    background-color: #0056b3;
+}
