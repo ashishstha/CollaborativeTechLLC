@@ -1,4 +1,5 @@
 .footer {
-    color: black;
-    background-color: rgb(250, 234, 214);
+    color: #f2f2f2;
+    background-color: rgba(15, 23, 42, 0.95);
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 }

@@ -1,72 +1,121 @@
 
 .contact-page {
-    padding: 24px 24px 100px 24px;
-    background-color: rgb(250, 234, 214);
+    margin: 0 auto;
+    padding: 60px 24px 100px;
+    background-color: #0f172a;
+    color: #f8fafc;
+    box-sizing: border-box;
 }
 
 .contact-title {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #007BFF;
-    margin-top: 0px;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    color: #f8fafc;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0 0 28px;
 }
 
 .contact-info {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    align-items: start;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 24px 80px rgba(15, 23, 42, 0.25);
 }
 
 .contact-img {
-    width: 240px;
-    max-width: 100%;
-    border-radius: 8px;
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    justify-self: center;
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    flex: 1;
-    min-width: 280px;
-    padding: 10px;
-    background-color: #b4b3b3;
-    border: 1.75px solid black;
+    gap: 20px;
+    min-width: 0;
+    padding: 32px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.name-field, .email-field {
-    padding: 5px;
+.name-field,
+.email-field {
+    width: 100%;
+    padding: 18px 16px;
+    box-sizing: border-box;
     border: none;
-    border-bottom: 1.5px solid black;
-    background-color: #b4b3b3;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 1px solid rgba(248, 250, 252, 0.2);
+    background: transparent;
+    color: #f8fafc;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.name-field::placeholder,
+.email-field::placeholder,
+.message-field::placeholder {
+    color: rgba(248, 250, 252, 0.55);
 }
 
 .message-field {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 5px 5px 50px 5px;
-    border: 1.5px solid black;
-    border-radius: 8px;
-    background-color: #b4b3b3;  
-    font-family: Arial, Helvetica, sans-serif
+    width: 100%;
+    min-height: 180px;
+    padding: 18px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(248, 250, 252, 0.16);
+    background: transparent;
+    color: #f8fafc;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 18px;
+    resize: vertical;
 }
 
-.name-field:hover, .email-field:hover, .message-field:hover {
-    background-color: #a8a8a8;
+.name-field:hover,
+.email-field:hover,
+.message-field:hover,
+.name-field:focus,
+.email-field:focus,
+.message-field:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(248, 250, 252, 0.32);
 }
 
 .submit-button {
-    border: 1.5px solid #007BFF;
-    border-radius: 12px;
-    width: 50%;
-    background-color: #007BFF;
-    align-self: center;
-    padding: 2px;
+    align-self: flex-start;
+    color: #0f172a;
+    border: none;
+    border-radius: 999px;
+    padding: 14px 30px;
+    background-color: #22d3ee;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .submit-button:hover {
-    border: 1.5px solid #0056b3;
-    background-color: #0056b3;
+    background-color: #38bdf8;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+        padding: 32px;
+    }
+
+    .contact-img {
+        max-width: 100%;
+    }
 }

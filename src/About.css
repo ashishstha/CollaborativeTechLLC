@@ -1,12 +1,28 @@
 .about-page {
-    background-color: rgb(250, 234, 214);
-    padding: 24px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    background-color: #0f172a;
+    color: #f8fafc;
+    box-sizing: border-box;
+}
+
+.about-top-background {
+    background: linear-gradient(
+      180deg,
+      rgba(30, 50, 90, 0.95) 0%,
+      rgba(15, 23, 42, 0.98) 100%
+    );
+    padding: 24px 0;
 }
 
 .about-title {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #007BFF;
-    margin-top: 0px;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    color: #f8fafc;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 28px;
+    text-align: center;
 }
 
 .about-us-image {
@@ -15,9 +31,20 @@
 }
 
 .subheadings {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #007BFF;
+    margin-left: 60px;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    color: #F9F7F2;
     font-size: 24px;
     text-align: left;
     margin-top: 24px;
+}
+
+.about-description {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    color: #F9F7F2;
+    line-height: 1.6;
+    text-align: left;
+    font-size: 15px;
 }

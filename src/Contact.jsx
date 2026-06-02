@@ -13,7 +13,7 @@ export default function Contact() {
                     <input className="name-field" type="text" placeholder="Full Name"/>
                     <input className="email-field" type="email" placeholder="Email Address" />
                     <textarea className="message-field" placeholder="Your Message"></textarea>
-                    <button className="submit-button">Send Message!</button>
+                    <button className="submit-button">Contact Us</button>
                 </div>
             </section>
         </div>
