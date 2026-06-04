@@ -5,6 +5,7 @@ import Home from './Home'
 import About from './About'
 import Services from './Services'
 import Contact from './Contact'
+import NotFound from './NotFound'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

@@ -100,7 +100,7 @@
     font-size: 13px;
     width: 150px;
     align-self: center;
-    padding: 6px;
+    padding: 10px 5px 10px;
 }
 
 .learn-more-button:hover {

@@ -1,7 +1,9 @@
 // Contact Page
 import React from 'react';
 import ContactImage from './assets/workplaceCollaboration.webp';
+import MyButton from './components/MyButton';
 import './Contact.css';
+
 
 export default function Contact() {
     return (
@@ -13,7 +15,7 @@ export default function Contact() {
                     <input className="name-field" type="text" placeholder="Full Name"/>
                     <input className="email-field" type="email" placeholder="Email Address" />
                     <textarea className="message-field" placeholder="Your Message"></textarea>
-                    <button className="submit-button">Contact Us</button>
+                    <MyButton className="submit-button">Contact Us</MyButton>
                 </div>
             </section>
         </div>
