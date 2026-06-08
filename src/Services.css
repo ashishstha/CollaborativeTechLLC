@@ -1,0 +1,48 @@
+.services-page {
+    margin: 0 auto;
+    padding: 60px 24px 100px;
+    background-color: #0f172a;
+    color: #f8fafc;
+    box-sizing: border-box;
+}
+
+.services-title {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    color: #f8fafc;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0 0 28px;
+}
+
+.services-description {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    color: #F9F7F2;
+    line-height: 1.6;
+}
+
+.services-subheading {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    color: #F9F7F2;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 32px 0px 20px;
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+    text-align: center;
+}
+
+.services-description-container {
+    text-align: left;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 24px 80px rgba(15, 23, 42, 0.25);
+    padding: 28px 24px;
+    color: #f8fafc;
+    font-size: 16px;
+    margin-left: 60px;
+    margin-right: 60px;
+}

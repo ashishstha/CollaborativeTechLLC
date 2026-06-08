@@ -1,0 +1,121 @@
+
+.contact-page {
+    margin: 0 auto;
+    padding: 60px 24px 100px;
+    background-color: #0f172a;
+    color: #f8fafc;
+    box-sizing: border-box;
+}
+
+.contact-title {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    color: #f8fafc;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0 0 28px;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    align-items: start;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 24px 80px rgba(15, 23, 42, 0.25);
+}
+
+.contact-img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    justify-self: center;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0;
+    padding: 32px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.name-field,
+.email-field {
+    width: 100%;
+    padding: 18px 16px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgba(248, 250, 252, 0.2);
+    background: transparent;
+    color: #f8fafc;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.name-field::placeholder,
+.email-field::placeholder,
+.message-field::placeholder {
+    color: rgba(248, 250, 252, 0.55);
+}
+
+.message-field {
+    width: 100%;
+    min-height: 180px;
+    padding: 18px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(248, 250, 252, 0.16);
+    background: transparent;
+    color: #f8fafc;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 18px;
+    resize: vertical;
+}
+
+.name-field:hover,
+.email-field:hover,
+.message-field:hover,
+.name-field:focus,
+.email-field:focus,
+.message-field:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(248, 250, 252, 0.32);
+}
+
+.submit-button {
+    align-self: flex-start;
+    color: #0f172a;
+    border: none;
+    border-radius: 999px;
+    padding: 14px 30px;
+    background-color: #22d3ee;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #38bdf8;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+        padding: 32px;
+    }
+
+    .contact-img {
+        max-width: 100%;
+    }
+}
