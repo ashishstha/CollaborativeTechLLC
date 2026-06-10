@@ -11,10 +11,12 @@ import FullStackImage from './assets/FullStackSample.png';
 export default function Home() {
     return (
         <div className="home-page">
+            {/* top section of the homepage */}
             <section className="home-banner"> 
                 <h1 className="home-title">Here to Bring Your Vision to Life!</h1>
                 <img src={ CollabTechLogo } alt="CollabTech Logo Sample" className="banner-logo-image" />   
             </section>
+            {/* bottom section of the homepage */}
             <h2 className="home-subheading">Our Services</h2>
             <section className="service-cards-container">
                 <Card className="service-card">
@@ -38,6 +40,13 @@ export default function Home() {
                         <MyButton to="/services" className="learn-more-button">Learn More</MyButton>
                     </Card.Body>
                 </Card>
+            </section>
+            <h2 className="home-subheading">Contact Us</h2>
+            <section className="home-contact-container">
+                <p className="contact-message">
+                    Contact us today for a tailored quote based on your specific project requirements. Have questions? We're here to help!
+                </p>
+                <MyButton to="/contact" className="to-contact-page">Go to Contact Page</MyButton>
             </section>
         </div>
     );

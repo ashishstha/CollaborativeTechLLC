@@ -89,7 +89,7 @@
     margin: 0;
 }
 
-.learn-more-button {
+.learn-more-button, .to-contact-page {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     border-radius: 24px;
     border: 1px solid #22d3ee;
@@ -103,8 +103,12 @@
     padding: 10px 5px 10px;
 }
 
-.learn-more-button:hover {
+.learn-more-button:hover, .to-contact-page:hover {
     background-color: #38bdf8;
     border: 1px solid #38bdf8;
     transform: translateY(-2px);
+}
+
+.contact-message {
+    margin: 20px;
 }
